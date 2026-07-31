@@ -1,0 +1,76 @@
+[project]
+name = "venture-lab"
+version = "0.1.0"
+description = "Evidence-governed AI research for business-opportunity validation."
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [
+    { name = "Ian Greenberg" },
+    { name = "Jintu Das", email = "jintuisbusy@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "httpx>=0.28",
+    "model2vec>=0.8.2",
+    "openrouter>=1.0.18",
+    "pydantic>=2",
+    "pydantic-settings>=2.14.2",
+    "rich>=15.0.0",
+    "sqlite-vec>=0.1.9",
+    "sqlmodel>=0.0.39",
+    "textual>=8.2.8",
+    "trafilatura>=2.1.0",
+    "typer>=0.27.0",
+]
+
+[project.scripts]
+op = "app.cli.main:main"
+venture-lab = "app.cli.main:main"
+opportunity-engine = "app.cli.main:main"
+
+[build-system]
+requires = ["uv_build>=0.9.24,<0.10.0"]
+build-backend = "uv_build"
+
+# The import package lives at the project root as `app/`, not under `src/`.
+[tool.uv.build-backend]
+module-name = "app"
+module-root = ""
+
+[dependency-groups]
+dev = [
+    "mypy>=2.3.0",
+    "pytest>=9.1.1",
+    "pytest-cov>=7.1.0",
+    "ruff>=0.16.0",
+]
+
+[tool.ruff]
+line-length = 100
+target-version = "py313"
+# The promo video is a separate media project with its own conventions — its
+# frame generator embeds CSS in string literals, which no line-length rule can
+# usefully police. mypy is already scoped to app + tests; this matches it.
+extend-exclude = ["video"]
+src = ["."]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "N", "UP", "B", "C4", "SIM", "RUF"]
+
+[tool.ruff.lint.isort]
+known-first-party = ["app"]
+
+[tool.mypy]
+python_version = "3.13"
+files = ["app", "tests"]
+strict = true
+plugins = ["pydantic.mypy"]
+
+[[tool.mypy.overrides]]
+module = ["openrouter.*", "sqlite_vec.*"]
+ignore_missing_imports = true
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra --strict-markers"

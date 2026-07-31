@@ -1,0 +1,25 @@
+{
+  "name": "feature-flagging",
+  "question": "How do teams ship behind feature flags, and what does that cost them afterwards?",
+  "scope": "Feature flags and progressive delivery in application code. Experiment design and A/B test statistics are out of scope.",
+  "tags": ["feature-flags", "progressive-delivery"],
+  "themes": [
+    "stale flag",
+    "technical debt",
+    "targeting rule",
+    "flag audit",
+    "misconfiguration",
+    "per-seat pricing"
+  ],
+  "expect": {
+    "evidence": { "min": 5, "max": 50 },
+    "research_brief": { "min": 1, "max": 6 },
+    "pain_cluster": { "min": 3, "max": 9 },
+    "opportunity": { "min": 2, "max": 9 },
+    "market_analysis": { "min": 2, "max": 9 },
+    "competition_analysis": { "min": 2, "max": 9 },
+    "contradiction_analysis": { "min": 2, "max": 9 },
+    "decision": { "min": 2, "max": 9 },
+    "interview_plan": { "min": 2, "max": 9 }
+  }
+}

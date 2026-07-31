@@ -1,0 +1,25 @@
+{
+  "name": "test-automation",
+  "question": "Where do teams lose time on automated tests, and what have they tried when a suite gets slow or unreliable?",
+  "scope": "Automated suites owned by the teams that write them. Manual QA process and test-team staffing are out of scope.",
+  "tags": ["testing", "quality"],
+  "themes": [
+    "flaky test",
+    "test runtime",
+    "end-to-end test",
+    "test data",
+    "test maintenance",
+    "code coverage"
+  ],
+  "expect": {
+    "evidence": { "min": 8, "max": 60 },
+    "research_brief": { "min": 1, "max": 6 },
+    "pain_cluster": { "min": 3, "max": 10 },
+    "opportunity": { "min": 2, "max": 10 },
+    "market_analysis": { "min": 2, "max": 10 },
+    "competition_analysis": { "min": 2, "max": 10 },
+    "contradiction_analysis": { "min": 2, "max": 10 },
+    "decision": { "min": 2, "max": 10 },
+    "interview_plan": { "min": 2, "max": 10 }
+  }
+}

@@ -1,0 +1,40 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+
+# Environments
+.venv/
+.env
+
+# Tooling caches
+.cache/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# Telemetry is per-machine measurement, not shared state.
+.telemetry/
+
+# Workspace: the directory tree is tracked, its generated contents are not.
+workspace/**
+!workspace/
+!workspace/*/
+!workspace/**/.gitkeep
+
+# Upstream promotional media is intentionally excluded from Venture Lab's clean
+# public history because its third-party voice, music, and font redistribution
+# terms were not independently verified for this release.
+video/
+
+# Databases
+*.db
+*.sqlite
+*.sqlite3
+
+# OS
+.DS_Store

@@ -1,0 +1,25 @@
+{
+  "name": "release-engineering",
+  "question": "How do teams cut and ship a release today, and where does that process break down?",
+  "scope": "Getting a tested build into production: versioning, changelogs, approvals, rollout and rollback. Producing the build is out of scope.",
+  "tags": ["release-engineering", "deployment"],
+  "themes": [
+    "release checklist",
+    "changelog",
+    "rollback",
+    "release coordination",
+    "config drift",
+    "approval gate"
+  ],
+  "expect": {
+    "evidence": { "min": 5, "max": 50 },
+    "research_brief": { "min": 1, "max": 6 },
+    "pain_cluster": { "min": 3, "max": 9 },
+    "opportunity": { "min": 2, "max": 9 },
+    "market_analysis": { "min": 2, "max": 9 },
+    "competition_analysis": { "min": 2, "max": 9 },
+    "contradiction_analysis": { "min": 2, "max": 9 },
+    "decision": { "min": 2, "max": 9 },
+    "interview_plan": { "min": 2, "max": 9 }
+  }
+}

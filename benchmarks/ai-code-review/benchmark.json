@@ -1,0 +1,25 @@
+{
+  "name": "ai-code-review",
+  "question": "Where do engineering teams lose time in code review, and what have they tried to fix it?",
+  "scope": "Software teams reviewing their own changes before merge. Security audit and regulatory sign-off are out of scope.",
+  "tags": ["code-review", "developer-productivity"],
+  "themes": [
+    "review turnaround",
+    "large pull request",
+    "review backlog",
+    "nitpicking",
+    "false positive",
+    "code ownership"
+  ],
+  "expect": {
+    "evidence": { "min": 8, "max": 60 },
+    "research_brief": { "min": 1, "max": 6 },
+    "pain_cluster": { "min": 3, "max": 10 },
+    "opportunity": { "min": 2, "max": 10 },
+    "market_analysis": { "min": 2, "max": 10 },
+    "competition_analysis": { "min": 2, "max": 10 },
+    "contradiction_analysis": { "min": 2, "max": 10 },
+    "decision": { "min": 2, "max": 10 },
+    "interview_plan": { "min": 2, "max": 10 }
+  }
+}

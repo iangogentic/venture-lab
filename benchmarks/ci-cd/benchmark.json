@@ -1,0 +1,25 @@
+{
+  "name": "ci-cd",
+  "question": "Where does time and money go in CI pipelines, and what do teams do when builds get slow or flaky?",
+  "scope": "Continuous integration and delivery for application teams. Release approval and rollout belong to the release-engineering benchmark.",
+  "tags": ["ci-cd", "build-systems"],
+  "themes": [
+    "flaky test",
+    "build time",
+    "ci cost",
+    "queue time",
+    "self-hosted runner",
+    "cache"
+  ],
+  "expect": {
+    "evidence": { "min": 8, "max": 60 },
+    "research_brief": { "min": 1, "max": 6 },
+    "pain_cluster": { "min": 3, "max": 10 },
+    "opportunity": { "min": 2, "max": 10 },
+    "market_analysis": { "min": 2, "max": 10 },
+    "competition_analysis": { "min": 2, "max": 10 },
+    "contradiction_analysis": { "min": 2, "max": 10 },
+    "decision": { "min": 2, "max": 10 },
+    "interview_plan": { "min": 2, "max": 10 }
+  }
+}

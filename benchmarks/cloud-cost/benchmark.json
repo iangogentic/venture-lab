@@ -1,0 +1,25 @@
+{
+  "name": "cloud-cost",
+  "question": "How do engineering teams find out where their cloud bill goes, and what do they actually do about it?",
+  "scope": "Engineering-owned cloud spend and the practices around it. Procurement and enterprise contract negotiation are out of scope.",
+  "tags": ["finops", "cloud-cost"],
+  "themes": [
+    "cost attribution",
+    "surprise bill",
+    "idle resource",
+    "rightsizing",
+    "cost visibility",
+    "data egress"
+  ],
+  "expect": {
+    "evidence": { "min": 8, "max": 60 },
+    "research_brief": { "min": 1, "max": 6 },
+    "pain_cluster": { "min": 3, "max": 10 },
+    "opportunity": { "min": 2, "max": 10 },
+    "market_analysis": { "min": 2, "max": 10 },
+    "competition_analysis": { "min": 2, "max": 10 },
+    "contradiction_analysis": { "min": 2, "max": 10 },
+    "decision": { "min": 2, "max": 10 },
+    "interview_plan": { "min": 2, "max": 10 }
+  }
+}

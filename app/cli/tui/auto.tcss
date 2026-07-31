@@ -1,0 +1,78 @@
+/* Styling for the `op auto` live view.
+ *
+ * A file rather than a string literal in the module, for the same reason the
+ * skill prompts live in `.claude/skills/`: content that is not code does not
+ * belong in code. A guard in the test suite enforces it.
+ */
+
+Screen {
+    layout: vertical;
+}
+
+/* The question, wrapped and capped: a long one must not push the stages off. */
+#question {
+    padding: 0 1;
+    height: auto;
+    max-height: 4;
+    color: $text;
+    background: $panel;
+}
+
+/* One header plus the nine stages, inside a border: the whole pipeline visible
+   at once, with no dead row at the bottom. */
+#stages {
+    height: 12;
+    min-height: 6;
+    border: round $primary;
+}
+
+/* Takes whatever is left, and scrolls. This is where a long failure goes. */
+#log {
+    height: 1fr;
+    min-height: 4;
+    border: round $primary-darken-2;
+    padding: 0 1;
+}
+
+#status {
+    padding: 0 1;
+    height: 1;
+    color: $text-muted;
+}
+
+/* The quit confirmation. Sized in cells rather than percentages so the prose
+   inside it wraps the same way on a wide terminal and a narrow one. */
+QuitConfirm {
+    align: center middle;
+}
+
+#quit-dialog {
+    width: 56;
+    max-width: 90%;
+    height: auto;
+    padding: 1 2;
+    border: thick $error;
+    background: $surface;
+}
+
+#quit-title {
+    text-style: bold;
+    width: 100%;
+}
+
+#quit-body {
+    width: 100%;
+    color: $text-muted;
+    margin-top: 1;
+}
+
+#quit-buttons {
+    width: 100%;
+    height: auto;
+    align-horizontal: right;
+    margin-top: 1;
+}
+
+#quit-buttons Button {
+    margin-left: 2;
+}

@@ -1,0 +1,25 @@
+{
+  "name": "developer-platforms",
+  "question": "Where do internal platform teams spend their time, and what do developers still work around?",
+  "scope": "Platform and developer-experience teams serving engineers inside their own company. Evaluating a vendor PaaS is out of scope.",
+  "tags": ["platform-engineering", "developer-experience"],
+  "themes": [
+    "golden path",
+    "self-service",
+    "platform bottleneck",
+    "onboarding",
+    "scaffolding",
+    "platform adoption"
+  ],
+  "expect": {
+    "evidence": { "min": 5, "max": 50 },
+    "research_brief": { "min": 1, "max": 6 },
+    "pain_cluster": { "min": 3, "max": 9 },
+    "opportunity": { "min": 2, "max": 9 },
+    "market_analysis": { "min": 2, "max": 9 },
+    "competition_analysis": { "min": 2, "max": 9 },
+    "contradiction_analysis": { "min": 2, "max": 9 },
+    "decision": { "min": 2, "max": 9 },
+    "interview_plan": { "min": 2, "max": 9 }
+  }
+}

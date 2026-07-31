@@ -1,0 +1,25 @@
+{
+  "name": "kubernetes-operations",
+  "question": "What goes wrong when teams run workloads on Kubernetes, and where does the operational time actually go?",
+  "scope": "Day-two operation of clusters by the teams that run them. Choosing an orchestrator in the first place is out of scope.",
+  "tags": ["kubernetes", "sre"],
+  "themes": [
+    "cluster upgrade",
+    "yaml sprawl",
+    "pod failure",
+    "resource limit",
+    "multi-cluster",
+    "custom resource"
+  ],
+  "expect": {
+    "evidence": { "min": 8, "max": 60 },
+    "research_brief": { "min": 1, "max": 6 },
+    "pain_cluster": { "min": 3, "max": 10 },
+    "opportunity": { "min": 2, "max": 10 },
+    "market_analysis": { "min": 2, "max": 10 },
+    "competition_analysis": { "min": 2, "max": 10 },
+    "contradiction_analysis": { "min": 2, "max": 10 },
+    "decision": { "min": 2, "max": 10 },
+    "interview_plan": { "min": 2, "max": 10 }
+  }
+}

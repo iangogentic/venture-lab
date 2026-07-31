@@ -1,0 +1,25 @@
+{
+  "name": "api-development",
+  "question": "Where do teams lose time building and maintaining the APIs their own colleagues consume?",
+  "scope": "Internal and partner HTTP or gRPC APIs inside one organisation. Public API product strategy is out of scope.",
+  "tags": ["apis", "developer-experience"],
+  "themes": [
+    "spec drift",
+    "breaking change",
+    "client sdk",
+    "api discovery",
+    "contract testing",
+    "versioning"
+  ],
+  "expect": {
+    "evidence": { "min": 5, "max": 50 },
+    "research_brief": { "min": 1, "max": 6 },
+    "pain_cluster": { "min": 3, "max": 9 },
+    "opportunity": { "min": 2, "max": 9 },
+    "market_analysis": { "min": 2, "max": 9 },
+    "competition_analysis": { "min": 2, "max": 9 },
+    "contradiction_analysis": { "min": 2, "max": 9 },
+    "decision": { "min": 2, "max": 9 },
+    "interview_plan": { "min": 2, "max": 9 }
+  }
+}
