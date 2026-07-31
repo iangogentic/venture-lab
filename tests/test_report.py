@@ -360,9 +360,12 @@ def test_report_out_writes_the_body(
 
     assert result.exit_code == 0
     assert target.read_text(encoding="utf-8") == "# The findings\n\nAll of them."
-    # The console wraps long paths, so assert on parts wrapping cannot split.
-    assert "report written" in result.output
-    assert target.name in result.output
+    # Rich may hard-wrap a long temporary path through the filename at different
+    # columns on different platforms. Remove presentation newlines before
+    # asserting on the semantic output.
+    rendered = result.output.replace("\n", "")
+    assert "report written" in rendered
+    assert target.name in rendered
 
 
 def test_report_skips_when_a_report_exists(
